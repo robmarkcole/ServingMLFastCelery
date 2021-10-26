@@ -11,4 +11,4 @@ docker build -t ml-app .
 Note there are many requirements, so I had to unpin a bunch of these to successfully build.
 
 ## Issues
-This is basically working, except the model file is not included, resulting in `KeyError: 'MODEL_PATH'`
+This is basically working, except the model file is not included, resulting in `KeyError: 'MODEL_PATH'`. Can generate this model since the data is on [kaggle](https://www.kaggle.com/sakshigoyal7/credit-card-customers)
