@@ -9,3 +9,6 @@ Build the app seperately:
 docker build -t ml-app .
 ```
 Note there are many requirements, so I had to unpin a bunch of these to successfully build.
+
+## Issues
+This is basically working, except the model file is not included, resulting in `KeyError: 'MODEL_PATH'`
