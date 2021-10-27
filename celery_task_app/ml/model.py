@@ -2,7 +2,7 @@ import joblib
 import os
 import pandas as pd
 
-MODEL_PATH = os.environ['MODEL_PATH']
+MODEL_PATH = 'churn_pipeline.pkl' # os.environ['MODEL_PATH']
 
 
 class ChurnModel:
