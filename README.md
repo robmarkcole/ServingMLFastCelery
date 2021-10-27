@@ -12,3 +12,11 @@ Note there are many requirements, so I had to unpin a bunch of these to successf
 
 ## Model
 This model is trained on data on [kaggle](https://www.kaggle.com/sakshigoyal7/credit-card-customers). I also had to upate the training notebook since there are some bad columns on the dataset on Kaggle.
+
+<p align="center">
+<img src="https://github.com/robmarkcole/ServingMLFastCelery/blob/master/images/predict.png" width="1100">
+</p>
+
+<p align="center">
+<img src="https://github.com/robmarkcole/ServingMLFastCelery/blob/master/images/response.png" width=1100">
+</p>
