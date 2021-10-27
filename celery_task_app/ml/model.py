@@ -2,7 +2,7 @@ import joblib
 import os
 import pandas as pd
 
-MODEL_PATH = 'churn_pipeline.pkl' # os.environ['MODEL_PATH']
+MODEL_PATH = "churn_pipeline.pkl"  # os.environ['MODEL_PATH']
 
 
 class ChurnModel:
@@ -17,17 +17,14 @@ class ChurnModel:
         model = joblib.load(path)
         return model
 
-    def predict(self, data, return_option='Prob'):
+    def predict(self, data, return_option="Prob"):
         """
         Make batch prediction on list of preprocessed feature dicts.
         Returns class probabilities if 'return_options' is 'Prob', otherwise returns class membership predictions
         """
         df = pd.DataFrame(data)
-        if return_option == 'Prob':
+        if return_option == "Prob":
             predictions = self.model.predict_proba(df)
         else:
             predictions = self.model.predict(df)
         return predictions
-
-
-
